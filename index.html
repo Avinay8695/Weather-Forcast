@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="weather-app">
+            <h1>Weather <span class="highlight">Forecast</span></h1>
+            <div class="search-container">
+                <input type="text" id="location-input" placeholder="Enter city name...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="error-container" id="error-container"></div>
+            <div class="weather-container" id="weather-container">
+                <div class="weather-info">
+                    <div class="city-name" id="city-name"></div>
+                    <div class="date-time" id="date-time"></div>
+                    <div class="weather-icon">
+                        <img id="weather-icon" src="" alt="Weather Icon">
+                    </div>
+                    <div class="temperature" id="temperature"></div>
+                    <div class="weather-description" id="weather-description"></div>
+                    <div class="additional-info">
+                        <div class="info-item">
+                            <i class="fas fa-temperature-high"></i>
+                            <span>Feels</span>
+                            <span id="feels-like" class="info-value"></span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-tint"></i>
+                            <span>Humidity</span>
+                            <span id="humidity" class="info-value"></span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-wind"></i>
+                            <span>Wind</span>
+                            <span id="wind-speed" class="info-value"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Powered by <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
